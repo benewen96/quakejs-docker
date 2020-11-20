@@ -1,9 +1,9 @@
 FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get -y install tzdata
 
 RUN apt-get update
+RUN apt-get -y install tzdata
 RUN apt-get upgrade -y
 
 RUN apt-get install sudo curl git nodejs npm jq apache2 wget apt-utils -y
