@@ -6,6 +6,8 @@ sed -i "s/quakejs/${SERVER}/g" index.html
 
 sed -i "s/${SERVER}:80/${SERVER}:${HTTP_PORT}/g" index.html
 
+sed -i "s/http/https/g" ioquake3.js
+
 /etc/init.d/apache2 start
 
 cd /quakejs
